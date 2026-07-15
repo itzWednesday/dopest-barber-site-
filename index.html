@@ -558,8 +558,8 @@
   // 1) Create a free project at supabase.com
   // 2) In the SQL Editor, run the snippet from reviews-supabase-setup.sql
   // 3) Go to Settings > API, copy your Project URL and "anon public" key below
-  const SUPABASE_URL = 'PASTE_YOUR_SUPABASE_PROJECT_URL_HERE';
-  const SUPABASE_ANON_KEY = 'PASTE_YOUR_SUPABASE_ANON_KEY_HERE';
+  const SUPABASE_URL = 'https://gdytanbzomctufldowfg.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdkeXRhbmJ6b21jdHVmbGRvd2ZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQwNzAxNTEsImV4cCI6MjA5OTY0NjE1MX0.Lb3XrMutFiKhiS87e98-2gXM33x3jxbNX06pgg7-5BI';
 
   const isConnected = SUPABASE_URL.indexOf('PASTE_YOUR') !== 0 && SUPABASE_ANON_KEY.indexOf('PASTE_YOUR') !== 0;
   const supabase = isConnected ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
